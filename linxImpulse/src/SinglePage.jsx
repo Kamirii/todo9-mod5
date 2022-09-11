@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import { Header } from "./components/Header/header.jsx"
-
+import { Form } from "./components/form/form.jsx"
 function SinglePage() {
   const [count, setCount] = useState(0)
 
   return (
-  <header> 
-   <Header /> 
-   </header>
+  <main> 
+   <Header/>
+    <Form />
+   </main>
+   
   )
 }
 
