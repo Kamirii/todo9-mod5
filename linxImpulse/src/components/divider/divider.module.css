@@ -1,0 +1,30 @@
+.divider {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.divider h3 {
+  position: relative;
+  color: #888888;
+  opacity: 1
+}
+
+.divider h3::before {
+  content: '';
+  position: absolute;
+  width: 22.6rem;
+  height: 0.09rem;
+  background-color: #888888;
+  top: 0.69rem;
+  left: -375px;
+}
+.divider h3::after {
+  content: '';
+  position: absolute;
+  width: 22.6rem;
+  height: 0.09rem;
+  background-color: #888888;
+  top: 0.69rem;
+  left: 198px;
+}
