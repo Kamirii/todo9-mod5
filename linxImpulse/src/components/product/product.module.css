@@ -41,3 +41,9 @@
     background-color:white;
    border: #888888 solid 1px;
 }
+.moreContent {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}

@@ -13,7 +13,7 @@ export const ProductLayout = (props) => {
                 <strong>{props.specialOffer}</strong>
                 <p>{props.installments}</p>
                 </div>  
-                <a href="#" className={styles.buttonProduct}>Comprar</a>
+                <button className={styles.buttonProduct}>Comprar</button>
                 
             </div>
         

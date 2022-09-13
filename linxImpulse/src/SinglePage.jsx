@@ -6,7 +6,6 @@ import { ProductLayout } from "./components/product/productLayout"
 import { FormShare } from "./components/FormShare/formShare.jsx"
 import { Footer } from "./components/Footer/footer.jsx"
 import styles from "./components/product/product.module.css"
-
 function SinglePage() {
 
   const [product, setProduct] = useState([])
@@ -14,7 +13,6 @@ function SinglePage() {
   const url = `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`
 
   const getApi = async () => {
-
       let res = await fetch(url).then((data) => data.json());
       setPage(page + 1);
       setProduct([...product, ...res.products]);
@@ -45,6 +43,11 @@ function SinglePage() {
         )
       })}
       </div>  
+
+      <div className={styles.moreContent}>
+      <button className={styles.buttonProduct} onClick={getApi}>Ainda mais produtos!</button>
+      </div>
+
       <Divider text="Compartilhe a novidade" />
       <FormShare />
       <Footer />
